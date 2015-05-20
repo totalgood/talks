@@ -103,60 +103,20 @@
 else:
     output = 0
 </code></pre>
-
-</section>
-</section>
-<section class="right-align-all lightest-body-text" data-background="image/neural-nets-demystified.png">
-  <h2 id="perceptron">Perceptron</h2><br><br><br><br><br><br><br><br><br><br><br><br>
-</section>
-<section>
-  <h2>Input Layer Is Row of Weights</h2>
-  <div id="impress" class="impress-not-supported">
-    <div style="height: 100%;">
-      <p><img src="image/W_input_row.png" alt="weight input row vector" /></p>
-    </div>
-  </div>
-
-</section>
-<section>
-  <h2>Output Layer Is Column of Weights</h2>
-  <div id="impress" class="impress-not-supported">
-    <div style="height: 100%;">
-      <p><img src="image/W_output_column.png" alt="weight output column vector" /></p>
-    </div>
-  </div>
-
-</section>
-<section class="right-align-all lightest-body-text" data-background="image/W_o.png">
-  <div class="transp-background" style="width: 80%; float: right">
-  <h2>Ouput Layer Is Column of Weights</h2>
-</section>
-<section class="right-align-all lightest-body-text" data-background="image/W_h.png">
-<div class="transp-background" style="width: 80%; float: right">
-  <h2>Multiple Perceptrons</h2>
-  <br>
-  <h3>6 Neurons become 6 rows</h3>
-  <br>
-  <h3>13 Outputs become 13 columns</h3>
-  <br>
-</div>
-
-</section>
-<section>
-<h2 id="need-something-a-little-better">Need something a little better</h2>
-
-<p>Works fine for “using” (<em><a href="https://en.wikipedia.org/wiki/Activation_function">activating</a></em>) your NN</p>
-
-<p>But for learning (<em><a href="https://en.wikipedia.org/wiki/Backpropagation">backpropagation</a></em>) you need it to be predictable…</p>
-
+</section><section>
+<h2 id="need-something-better">Need something better</h2>
 <ul>
-  <li>doesn’t change direction on you: <em><a href="https://en.wikipedia.org/wiki/Monotonic_function">monotonic</a></em></li>
-  <li>doesn’t jump around: <em><a href="https://en.wikipedia.org/wiki/Smoothness">smooth</a></em></li>
+<li>Fine for “using” (<em><a href="https://en.wikipedia.org/wiki/Activation_function">activating</a></em>) a NN</li>
+<li>But for "training" (<em><a href="https://en.wikipedia.org/wiki/Backpropagation">backpropagation</a></em>) need ...</li>
+  <ul>
+    <li>Doesn’t change direction: <em><a href="https://en.wikipedia.org/wiki/Monotonic_function">monotonic</a></em></li>
+    <li>Doesn’t jump around: <em><a href="https://en.wikipedia.org/wiki/Smoothness">smooth</a></em></li>
+  </ul>
 </ul>
 
 </section><section>
 
-<h2 id="sigmoidhttpsenwikipediaorgwikiperceptron"><a href="https://en.wikipedia.org/wiki/Perceptron"><em>Sigmoid</em></a></h2>
+<h2 id="sigmoid"><a href="https://en.wikipedia.org/wiki/Perceptron"><em>Sigmoid</em></a></h2>
 
 <p>Again, sounds mysterious… like a transcendental function</p>
 
@@ -189,14 +149,49 @@ else:
 ς (last letter in word)
 c (alternatively)</p>
 
+</section><section>
+
 <p>Most English speakers think of an “S” when they hear “Sigma” you think of an S.
 So the meaning has evolved to mean S-shaped.</p>
 
+<H2>That’s what we want</H2>
+<p> something smooth, shaped like an “S”</p>
+
+</section><section class="right-align-all lightest-body-text" data-background="image/neural-nets-demystified.png">
+
+  <h2 id="perceptron">Perceptron</h2><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </section><section>
 
-<p>That’s what we want, something smooth, shaped like an “S”</p>
+  <h2>Input Layer Is Row of Weights</h2>
+  <div id="impress" class="impress-not-supported">
+    <div style="height: 100%;">
+      <p><img src="image/W_input_row.png" alt="weight input row vector" /></p>
+    </div>
+  </div>
 
-<p>The trainer (<em>(backpropagator)[https://en.wikipedia.org/wiki/Backpropagation]</em>) can predict the change in <code>weights</code> required
+</section><section>
+
+  <h2>Output Layer Is Column of Weights</h2>
+  <div id="impress" class="impress-not-supported">
+    <div style="height: 100%;">
+      <p><img src="image/W_output_column.png" alt="weight output column vector" /></p>
+    </div>
+  </div>
+</section>
+<section class="right-align-all lightest-body-text" data-background="image/W_h.png">
+<div class="transp-background" style="width: 80%; float: right">
+  <br>
+  <h2>6 Perceptrons = 6 Rows</h2>
+  <h2>13 Outputs = 13 columns</h2>
+  <br>
+</div>
+
+</section><section>
+
+<H2 id="trainer">Trainer (<em>(backpropagator)[https://en.wikipedia.org/wiki/Backpropagation]</em>)</H2>
+
+<p>can predict the change in <code>weights</code> required
 Wants to nudge the <code>output</code> closer to the <code>target</code></p>
 
 <p><code>target</code>: known classification for training examples
