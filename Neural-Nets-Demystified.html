@@ -104,14 +104,33 @@ else:
     output = 0
 </code></pre>
 
-</section><section>
-
-<h2 id="perceptron">Perceptron</h2>
-
-<p>(Diagram of a perceptron)</p>
+</section>
+</section>
+<section class="right-align-all lightest-body-text" data-background="image/neural-nets-demystified.png">
+  <h2 id="perceptron">Perceptron</h2><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+<section>
+  <h2>Input Layer Is Row of Weights</h2>
+  <div id="impress" class="impress-not-supported">
+    <div style="height: 100%;">
+      <p><img src="image/W_input_row.png" alt="weight input row vector" /></p>
+    </div>
+  </div>
 
 </section>
+<section>
+  <h2>Output Layer Is Column of Weights</h2>
+  <div id="impress" class="impress-not-supported">
+    <div style="height: 100%;">
+      <p><img src="image/W_output_column.png" alt="weight output column vector" /></p>
+    </div>
+  </div>
 
+</section>
+<section class="right-align-all lightest-body-text" data-background="image/W_o.png">
+  <div class="transp-background" style="width: 80%; float: right">
+  <h2>Ouput Layer Is Column of Weights</h2>
+</section>
 <section class="right-align-all lightest-body-text" data-background="image/W_h.png">
 <div class="transp-background" style="width: 80%; float: right">
   <h2>Multiple Perceptrons</h2>
@@ -426,207 +445,7 @@ I wasted a lot of time training models for Kaggle that overfitted.</p>
   <li><a href="https://github.com/pybrain2/pybrain2">PyBrain2</a>: We’re working on it</li>
 </ul>
 
-</section><section>
-
-<p>Code highlighting test</p>
-
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">linkify</span><span class="p">(</span> <span class="nx">selector</span> <span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span> <span class="nx">supports3DTransforms</span> <span class="p">)</span> <span class="p">{</span>
- 
-    <span class="kd">var</span> <span class="nx">nodes</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span> <span class="nx">selector</span> <span class="p">);</span>
- 
-    <span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
-      <span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
- 
-      <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nx">node</span><span class="p">.</span><span class="nx">className</span> <span class="p">)</span> <span class="p">{</span>
-        <span class="nx">node</span><span class="p">.</span><span class="nx">className</span> <span class="o">+=</span> <span class="s1">&#39; roll&#39;</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
-
 </section>
-        <section>
-          <h1>Reveal.js</h1>
-          <h3>The HTML Presentation Framework</h3>
-          <p>
-            <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-          </p>
-        </section>
-
-        <section>
-          <h2>Hello There</h2>
-          <p>
-            reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-          </p>
-        </section>
-
-        <!-- Example of nested vertical slides -->
-        <section>
-          <section>
-            <h2>Vertical Slides</h2>
-            <p>Slides can be nested inside of each other.</p>
-            <p>Use the <em>Space</em> key to navigate through all slides.</p>
-            <br>
-            <a href="#" class="navigate-down">
-              <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
-          </section>
-          <section>
-            <h2>Basement Level 1</h2>
-            <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-          </section>
-          <section>
-            <h2>Basement Level 2</h2>
-            <p>That's it, time to go back up.</p>
-            <br>
-            <a href="#/2">
-              <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-            </a>
-          </section>
-        </section>
-
-        <section>
-          <h2>Slides</h2>
-          <p>
-            Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-          </p>
-        </section>
-
-        <section>
-          <h2>Point of View</h2>
-          <p>
-            Press <strong>ESC</strong> to enter the slide overview.
-          </p>
-          <p>
-            Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-          </p>
-        </section>
-
-        <section>
-          <h2>Touch Optimized</h2>
-          <p>
-            Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-          </p>
-        </section>
-
-        <section data-markdown>
-          <script type="text/template">
-            ## Markdown support
-
-            Write content using inline or external Markdown.
-            Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-            ```
-            <section data-markdown>
-              ## Markdown support
-
-              Write content using inline or external Markdown.
-              Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-            </section>
-            ```
-          </script>
-        </section>
-
-        <section>
-          <section id="fragments">
-            <h2>Fragments</h2>
-            <p>Hit the next arrow...</p>
-            <p class="fragment">... to step through ...</p>
-            <p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-            <aside class="notes">
-              This slide has fragments which are also stepped through in the notes window.
-            </aside>
-          </section>
-          <section>
-            <h2>Fragment Styles</h2>
-            <p>There's different types of fragments, like:</p>
-            <p class="fragment grow">grow</p>
-            <p class="fragment shrink">shrink</p>
-            <p class="fragment fade-out">fade-out</p>
-            <p class="fragment current-visible">current-visible</p>
-            <p class="fragment highlight-red">highlight-red</p>
-            <p class="fragment highlight-blue">highlight-blue</p>
-          </section>
-        </section>
-
-        <section id="transitions">
-          <h2>Transition Styles</h2>
-          <p>
-            You can select from different transitions, like: <br>
-            <a href="?transition=none#/transitions">None</a> -
-            <a href="?transition=fade#/transitions">Fade</a> -
-            <a href="?transition=slide#/transitions">Slide</a> -
-            <a href="?transition=convex#/transitions">Convex</a> -
-            <a href="?transition=concave#/transitions">Concave</a> -
-            <a href="?transition=zoom#/transitions">Zoom</a>
-          </p>
-        </section>
-
-        <section id="themes">
-          <h2>Themes</h2>
-          <p>
-            reveal.js comes with a few themes built in: <br>
-            <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-          </p>
-        </section>
-
-        <section>
-          <section data-background="#dddddd">
-            <h2>Slide Backgrounds</h2>
-            <p>
-              Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-            </p>
-            <a href="#" class="navigate-down">
-              <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
-          </section>
-          <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-            <h2>Image Backgrounds</h2>
-            <pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-          </section>
-          <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-            <h2>Tiled Backgrounds</h2>
-            <pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-          </section>
-          <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-            <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-              <h2>Video Backgrounds</h2>
-              <pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-            </div>
-          </section>
-          <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-            <h2>... and GIFs!</h2>
-          </section>
-        </section>
-
-        <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-          <h2>Background Transitions</h2>
-          <p>
-            Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-          </p>
-          <pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-        </section>
-
-        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-          <h2>Background Transitions</h2>
-          <p>
-            You can override background transitions per-slide.
-          </p>
-          <pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-        </section>
 
         <section>
           <h2>Pretty Code</h2>
