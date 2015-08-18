@@ -111,6 +111,27 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 <figure>
 <img src="image/BYOB-C_elegans_male.svg" alt="C Elegans&#39; brain is shaped like a donut or our pharynx" /><figcaption>C Elegans' brain is shaped like a donut or our pharynx</figcaption>
 </figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="image/BYOB-biology-gray.png" alt="Typical animal neuron" /><figcaption>Typical animal neuron</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="image/BYOB-biology-and-math.png" alt="Math mirrors life" /><figcaption>Math mirrors life</figcaption>
+</figure>
+</section><section id="priorities-matter" class="slide level2">
+<h1>Priorities Matter</h1>
+<ul>
+<li>Neanderthals' big eyes likely drove them to extinction<a href="#/fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+<li>Too much brainpower on high-res visual processing</li>
+<li>Less imagination</li>
+<li>Less brain horsepower for being social</li>
+</ul>
+<figure>
+<img src="image/BYOB-Kermanshah_Pal_Museum-Neanderthal.jpg" alt="Neanderthals&#39; large eyes may have hurt their chances" /><figcaption>Neanderthals' large eyes may have hurt their chances</figcaption>
+</figure>
 </section><section id="animal-intelligence" class="slide level2">
 <h1>Animal Intelligence</h1>
 <p>Artificial brains aren't at all like human brains,</p>
@@ -423,14 +444,13 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 </section><section id="not-so-fast-big-o..." class="slide level2">
 <h1>Not so fast, big O...</h1>
 <p>{% highlight python %} &gt;&gt;&gt; np.prod([30, 20, 10]) 6000 &gt;&gt;&gt; np.sum([30, 20, 10])**2 3600 {% endhighlight %}</p>
-</section><section class="slide level2">
-
-<p>Rule of thumb</p>
+</section><section id="rule-of-thumb" class="slide level2">
+<h1>Rule of thumb</h1>
 <p>NOT <code>N**2</code></p>
 <p>But <code>M * N**2</code></p>
 <p>N: number of nodes M: number of layers</p>
-</section><section class="slide level2">
-
+</section><section id="automated-architecture-limits" class="slide level2">
+<h1>Automated Architecture Limits</h1>
 <p><code>assert(M * N**2 &lt; len(training_set) / 10.)</code></p>
 <p>I'm serious... put this into your code. I wasted a lot of time training models for Kaggle that was overfit.</p>
 </section><section class="slide level2">
@@ -515,6 +535,12 @@ for( var i = 0, len = nodes.length; i &amp;lt; len; i++ ) {
 }</code></pre>
 <p>} } {% endhighlight %}</p>
 </section></section>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>http://www.bbc.com/news/science-environment-21759233<a href="#/fnref1">↩</a></p></li>
+</ol>
+</section>
     </div>
   </div>
 
