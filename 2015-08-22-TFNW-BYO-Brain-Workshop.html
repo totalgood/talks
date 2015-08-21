@@ -38,11 +38,8 @@
 <p><strong>B</strong>rains not <strong>B</strong>eer</p>
 <p>See the <a href="http://totalgood.github.io/talks/2015-08-22-TFNW-BYO-Brain-Workshop">reveal.js slides</a> for the latest</p>
 </section>
-<section id="this-workshop-developed-for" class="slide level2">
-<h1>This workshop developed for</h1>
-</section>
-<section id="total-good" class="slide level2">
-<h1><a href="http://totalgood.com">Total Good</a></h1>
+<section id="workshop-developed-fortotal-good" class="slide level2">
+<h1>Workshop developed for<br><a href="http://totalgood.com">Total Good</a></h1>
 <p>by</p>
 <p><script type="text/javascript">
 <!--
@@ -72,24 +69,24 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'Zeke'+'<\/'+'a'+'>');
 <section id="intro" class="slide level2">
 <h1><a href="http://hobsonlane.com/talks/Neural-Nets-Demystified.html">Intro</a></h1>
 <ol type="1">
-<li class="fragment">Neurons</li>
+<li class="fragment">Neuron</li>
 <li class="fragment">Layers</li>
 <li class="fragment">Code</li>
 </ol>
 <div>
 <aside class="notes">
-      <p>
-First I’ll show you a simple example (predicting Portland Weather).
+  <p>
+We'll start with a single neuron cell, just like biology.
 </p>
-      <p>
-Then I’ll show you how to play around at the frontier of the state of the art
+  <p>
+We'll talk about the invention of artificial neurons (perceptrons) and how they can be be combined to produce interesting &quot;brains.&quot;
 </p>
-    <p>
-Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science-Group/events/222322211/">PDX Data Science Meetup</a>
-<p>
-    <p>
-<a href="/Data-Science-Meetup--Neural-Nets-Demystified/">&quot;Neural Nets Demystified.&quot;</a>
-<p>
+  <p>
+Then we'll add a second neuron and talk about how that evolution cost a decade of thinking before scientists figured out what to do with additional neuron &quot;layers.&quot;
+</p>
+  <p>
+Then I'll show you how to leverage others' code to build a real brain
+</p>
   </aside>
 </div>
 </section>
@@ -107,12 +104,22 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 </section><section class="slide level2">
 
 <figure>
-<img src="image/BYOB-CelegansGoldsteinLabUNC.jpg" alt="C ElegansMost photographed organism of all time?" /><figcaption>C Elegans<br>Most photographed organism of all time?</figcaption>
+<img src="/images/BYOB-CelegansGoldsteinLabUNC.jpg" alt="C ElegansMost photographed organism of all time?" /><figcaption>C Elegans<br>Most photographed organism of all time?</figcaption>
 </figure>
 </section><section class="slide level2">
 
 <figure>
-<img src="image/BYOB-C_elegans_male.svg" alt="C Elegans&#39; brain is shaped like a donut or our pharynx" /><figcaption>C Elegans' brain is shaped like a donut or our pharynx</figcaption>
+<img src="/images/BYOB-C_elegans_male.svg" alt="C Elegans&#39; brain is shaped like a donut or our pharynx" /><figcaption>C Elegans' brain is shaped like a donut or our pharynx</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="/images/BYOB-biology-gray.png" alt="Typical animal neuron" /><figcaption>Typical animal neuron</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="/images/BYOB-biology-and-math.png" alt="Math mirrors life" /><figcaption>Math mirrors life</figcaption>
 </figure>
 </section><section id="animal-intelligence" class="slide level2">
 <h1>Animal Intelligence</h1>
@@ -147,16 +154,25 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 <li>Not decades</li>
 </ul></li>
 </ul>
-</section><section id="mcculloch-pitts-neuron" class="slide level2">
-<h1>McCulloch Pitts Neuron&quot;</h1>
+</section><section id="mcculloch-pitts-neuron-mcp" class="slide level2">
+<h1>McCulloch Pitts Neuron (MCP)</h1>
 <p>Modeled after biological neurons. Can be combined to perform any logical or mathematical operation.</p>
 <p>Binary output: 0 or +1 Any Number of <strong>binary</strong> inputs Inhibitory input with &quot;veto&quot; power</p>
 </section><section id="rosenblatts-perceptron" class="slide level2">
 <h1>Rosenblatt's Perceptron</h1>
 <p>Designed to be &quot;trainable&quot; Rosenblatt provided a training algorithm</p>
 <p>Binary output: <strong>-1</strong> or +1 Any number of real inputs Threshold = 0 Weights and inputs can be real-valued</p>
-</section><section id="modern-neuron" class="slide level2">
-<h1>Modern Neuron</h1>
+</section><section id="lets-build-one" class="slide level2">
+<h1>Let's Build One</h1>
+<script src="https://gist.github.com/hobson/910f915910147d1ba9c0.js"></script>
+
+</section><section id="ipython-notebook" class="slide level2">
+<h1><a href="https://github.com/totalgood/talks/blob/master/notebooks/1948-BYOB-Learn-to-be-Logical.ipynb">iPython Notebook</a></h1>
+<figure>
+<embed src="https://totalgood.github.io/talks/notebooks/1948-BYOB-Learn-to-be-Logical.ipynb" /><figcaption>Learned Logic</figcaption>
+</figure>
+</section><section id="modern-neurons" class="slide level2">
+<h1>Modern Neurons</h1>
 </section><section id="activation-functions" class="slide level2">
 <h1>Activation functions</h1>
 <ul>
@@ -167,8 +183,24 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 <li>sync</li>
 <li>tanh</li>
 </ul>
-</section><section id="modern" class="slide level2">
-<h1>Modern</h1>
+</section><section id="priorities-matter" class="slide level2">
+<h1>Priorities Matter</h1>
+<ul>
+<li>Neanderthals' big eyes likely drove them to extinction<a href="#/fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+<li>Too much of a good thing
+<ul>
+<li>Less room for imagination</li>
+<li>Less neurons for social interaction</li>
+</ul></li>
+</ul>
+<figure>
+<img src="/images/BYOB-Kermanshah_Pal_Museum-Neanderthal.jpg" alt="Neanderthals&#39; large eyes may have hurt their chances" /><figcaption>Neanderthals' large eyes may have hurt their chances</figcaption>
+</figure>
+</section><section id="lesson-depth-wins" class="slide level2">
+<h1>Lesson: Depth Wins</h1>
+<p>A deeper brain may be better</p>
+<p>than</p>
+<p>High resolution sensing</p>
 </section><section id="layers" class="slide level2">
 <h1>Layers</h1>
 <ul>
@@ -184,10 +216,8 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 <li>scale-free</li>
 </ul></li>
 </ul>
-</section><section id="neural-nets-were-made-for-..." class="slide level2">
-<h1>Neural Nets were &quot;made&quot; for ...</h1>
-</section><section id="hyperdimensionality" class="slide level2">
-<h1>Hyperdimensionality</h1>
+</section><section id="neural-nets-were-made-for-...hyperdimensionality" class="slide level2">
+<h1>Neural Nets were &quot;made&quot; for ...<br>Hyperdimensionality</h1>
 <ul>
 <li>Images (object recognition)</li>
 <li>Sound (speech recognition)</li>
@@ -209,10 +239,8 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 </div>
 </section><section id="neural-nets-help-when-..." class="slide level2">
 <h1>Neural Nets help when ...</h1>
-</section><section id="you-dont-know-what-to-look-for" class="slide level2">
-<h1>You don't know what to look for</h1>
-</section><section id="feature-engineering" class="slide level2">
-<h1>(feature engineering)</h1>
+</section><section id="you-dont-know-what-to-look-forfeature-engineering" class="slide level2">
+<h1>You don't know what to look for<br>(feature engineering)</h1>
 <ul>
 <li>FFT</li>
 <li>DCT</li>
@@ -248,16 +276,16 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 <li>Kinect or RealSense</li>
 </ul></li>
 </ul>
-</section><section id="neural-nets-can-see-through-structure-noise" class="slide level2">
-<h1>Neural Nets can &quot;see&quot; through structure noise</h1>
+</section><section id="nns-see-through-structured-noise" class="slide level2">
+<h1>NNs &quot;see&quot; through structured noise</h1>
 <p>Both images and sound often suffer from</p>
 <ul>
 <li>occlusion</li>
 <li>obsucration/haze/fog/fade</li>
 <li>rotation/translation/warping</li>
 </ul>
-</section><section id="neural-nets-need-data-and-power" class="slide level2">
-<h1>Neural Nets need data and power</h1>
+</section><section id="nns-need-data-and-power" class="slide level2">
+<h1>NNs need data and power</h1>
 <ul>
 <li>Lots of examples to learn from</li>
 <li>CPU/GPU cycles to burn
@@ -342,6 +370,18 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 <li>PyBrain</li>
 <li>pug-ann (helper functions TBD PyBrain2)</li>
 </ul>
+</section><section id="visualizing-a-brain3" class="slide level2">
+<h1>Visualizing a Brain<a href="#/fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></h1>
+<ul>
+<li>watch the weights evolve</li>
+<li>activate with examples and watch intermediate layers</li>
+</ul>
+</section><section class="slide level2">
+
+<p>[Output column heatmap]BYOB-W_output_column.png)</p>
+</section><section class="slide level2">
+
+<p>[Input row heatmap]BYOB-W_output_column.png)</p>
 </section><section id="get-historical-weather-for-portland-then-..." class="slide level2">
 <h1>Get historical weather for Portland then ...</h1>
 <ol type="1">
@@ -432,14 +472,13 @@ Thoughts about the upcoming <a href="http://www.meetup.com/Portland-Data-Science
 </section><section id="not-so-fast-big-o..." class="slide level2">
 <h1>Not so fast, big O...</h1>
 <p>{% highlight python %} &gt;&gt;&gt; np.prod([30, 20, 10]) 6000 &gt;&gt;&gt; np.sum([30, 20, 10])**2 3600 {% endhighlight %}</p>
-</section><section class="slide level2">
-
-<p>Rule of thumb</p>
+</section><section id="rule-of-thumb" class="slide level2">
+<h1>Rule of thumb</h1>
 <p>NOT <code>N**2</code></p>
 <p>But <code>M * N**2</code></p>
 <p>N: number of nodes M: number of layers</p>
-</section><section class="slide level2">
-
+</section><section id="automated-architecture-limits" class="slide level2">
+<h1>Automated Architecture Limits</h1>
 <p><code>assert(M * N**2 &lt; len(training_set) / 10.)</code></p>
 <p>I'm serious... put this into your code. I wasted a lot of time training models for Kaggle that was overfit.</p>
 </section><section class="slide level2">
@@ -524,6 +563,13 @@ for( var i = 0, len = nodes.length; i &amp;lt; len; i++ ) {
 }</code></pre>
 <p>} } {% endhighlight %}</p>
 </section></section>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>http://www.bbc.com/news/science-environment-21759233<a href="#/fnref1">↩</a></p></li>
+<li id="fn2"><p>http://cs231n.github.io/understanding-cnn/<a href="#/fnref2">↩</a></p></li>
+</ol>
+</section>
     </div>
   </div>
 

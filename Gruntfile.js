@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 		},
 
 		qunit: {
-			files: [ 'test/*.html' ]
+			files: [ 'test/*.html', 'notebooks/*.html', 'notebooks/*.ipynb', 'notebooks/**' ]
 		},
 
 		uglify: {
@@ -105,7 +105,8 @@ module.exports = function(grunt) {
 				'js/**',
 				'lib/**',
 				'images/**',
-				'plugin/**'
+				'plugin/**',
+        'notebooks/**',
 			]
 		},
 
@@ -126,7 +127,7 @@ module.exports = function(grunt) {
 				tasks: 'css-core'
 			},
 			html: {
-				files: [ 'index.html']
+				files: [ 'index.html', '*.html', 'notebooks/*.html']
 			}
 		}
 
