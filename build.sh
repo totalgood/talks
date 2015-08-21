@@ -1,6 +1,12 @@
 # FIXME: find all revealjs markdown files and run pandoc on them like this
-cp `pwd`/../hobson.github.io/images/*.jpg `pwd`/images/
-cp `pwd`/../hobson.github.io/images/*.png `pwd`/images/
-cp `pwd`/../hobson.github.io/images/*.svg `pwd`/images/
-cp `pwd`/../hobson.github.io/images/*.gif `pwd`/images/
-pandoc -t revealjs --template=`pwd`/pandoc-template-for-revealjs.html -V theme=moon -s `pwd`/../hobson.github.io/_posts/2015-08-22-TFNW-BYO-Brain-Workshop.md -o `pwd`/2015-08-22-TFNW-BYO-Brain-Workshop.html
+rm -rf `pwd`/images/
+mkdir -p `pwd`/images/
+cp -f `pwd`/../hobson.github.io/images/*.* `pwd`/images/
+# cp -f `pwd`/../hobson.github.io/images/*.png `pwd`/images/
+# cp -f `pwd`/../hobson.github.io/images/*.svg `pwd`/images/
+# cp -f `pwd`/../hobson.github.io/images/*.gif `pwd`/images/
+PRESENTATION=2015-08-22-TFNW-BYO-Brain-Workshop
+MARKDOWN=`pwd`"/../hobson.github.io/_posts/${PRESENTATION}.md"
+HTML=`pwd`"/${PRESENTATION}.html"
+pandoc -t revealjs --mathjax --template=`pwd`/pandoc-template-for-revealjs.html -V theme=moon -s "$MARKDOWN" -o "$HTML"
+sed -i -e 's/src\=\"\/images/src="\/talks\/images/g' "$HTML"
