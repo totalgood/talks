@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 		},
 
 		qunit: {
-			files: [ 'test/*.html', 'notebooks/*.html', 'notebooks/*.ipynb', 'notebooks/*' ]
+			files: [ 'test/*.html', 'notebooks/*.html', 'notebooks/*.ipynb', 'notebooks/**' ]
 		},
 
 		uglify: {
@@ -105,7 +105,8 @@ module.exports = function(grunt) {
 				'js/**',
 				'lib/**',
 				'images/**',
-				'plugin/**'
+				'plugin/**',
+        'notebooks/**',
 			]
 		},
 
