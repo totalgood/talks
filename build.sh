@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # FIXME: find all revealjs markdown files and run pandoc on them like this
 rm -rf `pwd`/images/
 mkdir -p `pwd`/images/
