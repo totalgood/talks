@@ -13,7 +13,7 @@ HTML=`pwd`"/${PRESENTATION}.html"
 pandoc -t revealjs --mathjax --template=`pwd`/pandoc-template-for-revealjs.html -V theme=moon -s "$MARKDOWN" -o "$HTML"
 sed -i -e 's/src\=\"\/images/src="\/talks\/images/g' "$HTML"
 
-git add images/
+git add images
 git commit -am "auto-commit new build  $(date)"
 git push tg
 git push origin
