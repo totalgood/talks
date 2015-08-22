@@ -18,3 +18,9 @@ git add notebooks/*.ipynb
 git commit -am "auto-commit new build  $(date)"
 git push tg
 git push origin
+
+git checkout master
+git merge gh-pages
+git push
+
+git checkout gh-pages
