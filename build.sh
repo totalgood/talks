@@ -20,6 +20,8 @@ fi
 MARKDOWN="$BUILD_DIR/../hobson.github.io/_posts/${PRESENTATION}.md"
 BLOG="$BUILD_DIR/../hobson.github.io/"
 HTML="$BUILD_DIR/${PRESENTATION}.html"
+IPYNB="$BUILD_DIR/../webapps/hackor/"
+
 
 pandoc -t revealjs --mathjax --template=`pwd`/pandoc-template-for-revealjs.html -V theme=moon -s "$MARKDOWN" -o "$HTML"
 sed -i -e 's/src\=\"\/images/src="\/talks\/images/g' "$HTML"
@@ -45,5 +47,10 @@ cd "$BLOG"
 git add _posts
 git commit -am 'update blog post to reflect slides'
 git push
-git push origin gh-pages
+cd "$BUILD_DIR"
+
+cd "$IPYNB"
+git add data/*.ipynb
+git commit -am 'update ipython notebooks to reflect talk slides'
+git push
 cd "$BUILD_DIR"
