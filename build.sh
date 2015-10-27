@@ -45,5 +45,5 @@ cd "$BLOG"
 git add _posts
 git commit -am 'update blog post to reflect slides'
 git push
-git git push origin gh-pages
+git push origin gh-pages
 cd "$BUILD_DIR"
