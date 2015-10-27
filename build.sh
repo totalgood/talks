@@ -17,8 +17,9 @@ if [ -z "$1" ]; then
 else
     PRESENTATION="$1"
 fi
-MARKDOWN=`pwd`"/../hobson.github.io/_posts/${PRESENTATION}.md"
-HTML=`pwd`"/${PRESENTATION}.html"
+MARKDOWN="$BUILD_DIR/../hobson.github.io/_posts/${PRESENTATION}.md"
+BLOG="$BUILD_DIR/../hobson.github.io/"
+HTML="$BUILD_DIR/${PRESENTATION}.html"
 
 pandoc -t revealjs --mathjax --template=`pwd`/pandoc-template-for-revealjs.html -V theme=moon -s "$MARKDOWN" -o "$HTML"
 sed -i -e 's/src\=\"\/images/src="\/talks\/images/g' "$HTML"
@@ -39,3 +40,10 @@ git checkout gh-pages
 git merge master
 git push tg
 git push origin
+
+cd "$BLOG"
+git add _posts
+git commit -am 'update blog post to reflect slides'
+git push
+git git push origin gh-pages
+cd "$BUILD_DIR"
