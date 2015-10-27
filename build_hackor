@@ -6,7 +6,7 @@ BUILD_DIR=`pwd`
 rm -rf "$BUILD_DIR/images/"
 mkdir -p "$BUILD_DIR/images/"
 # cp -f "$BUILD_DIR/../hobson.github.io/images/"*.* "$BUILD_DIR/images/"
-cp -f "$BUILD_DIR/../hobson.github.io/images/"* "$BUILD_DIR/images/"
+cp -rf "$BUILD_DIR/../hobson.github.io/images" "$BUILD_DIR/images"
 # cp -f `pwd`/../hobson.github.io/images/*.png `pwd`/images/
 # cp -f `pwd`/../hobson.github.io/images/*.svg `pwd`/images/
 # cp -f `pwd`/../hobson.github.io/images/*.gif `pwd`/images/
