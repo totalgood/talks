@@ -50,6 +50,7 @@ git push
 cd "$BUILD_DIR"
 
 cd "$IPYNB"
+git add *.ipynb
 git add data/*.ipynb
 git commit -am 'update ipython notebooks to reflect talk slides'
 git push
