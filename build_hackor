@@ -2,10 +2,11 @@
 
 # FIXME: find all revealjs markdown files and run pandoc on them like this
 
-rm -rf `pwd`/images/
-mkdir -p `pwd`/images/
-cp -f `pwd`/../hobson.github.io/images/*.* `pwd`/images/
-cp -f `pwd`/../hobson.github.io/images/* `pwd`/images/
+BUILD_DIR=`pwd`
+rm -rf "$BUILD_DIR/images/"
+mkdir -p "$BUILD_DIR/images/"
+# cp -f "$BUILD_DIR/../hobson.github.io/images/"*.* "$BUILD_DIR/images/"
+cp -f "$BUILD_DIR/../hobson.github.io/images/"* "$BUILD_DIR/images/"
 # cp -f `pwd`/../hobson.github.io/images/*.png `pwd`/images/
 # cp -f `pwd`/../hobson.github.io/images/*.svg `pwd`/images/
 # cp -f `pwd`/../hobson.github.io/images/*.gif `pwd`/images/
@@ -14,6 +15,7 @@ if [ -z "$1" ]; then
     PRESENTATION=2015-08-22-TFNW-BYO-Brain-Workshop
 else
     PRESENTATION="$1"
+fi
 MARKDOWN=`pwd`"/../hobson.github.io/_posts/${PRESENTATION}.md"
 HTML=`pwd`"/${PRESENTATION}.html"
 
