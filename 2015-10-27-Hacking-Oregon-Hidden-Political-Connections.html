@@ -46,18 +46,27 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'Hobs'+'<\/'+'a'+'>');
 </ul>
 <p><sub><sup>v0.0.1</sup></sub></p>
 </section>
-<section class="slide level1">
-
-<h2 id="agenda---1">Agenda - 1</h2>
+<section id="agenda" class="slide level1">
+<h1>Agenda:</h1>
+<p>For Hack Oregon we explored the data in unusual ways</p>
+<ol type="1">
+<li>Pandas as a DB</li>
+<li>Find Connections (FKs, PKs, <em>other</em> DBs)</li>
+<li>TFIDF on a DB table</li>
+<li>TFIDF similarity</li>
+<li>Similarity Similarity</li>
+</ol>
+</section>
+<section id="intro-1" class="slide level1">
+<h1>Intro: 1</h1>
 <p>Pandas as a relational DB</p>
 <ul>
 <li>Identify foreign keys automatically</li>
 <li>Use FKs to do join SQL-like queries</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="agenda---2">Agenda - 2</h2>
+<section id="intro-2" class="slide level1">
+<h1>Intro: 2</h1>
 <p>Intersect large sets</p>
 <ul>
 <li>AM emails in BehindTheCurtain DB?</li>
@@ -66,9 +75,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'Hobs'+'<\/'+'a'+'>');
 <li>Intersect emails with public records</li>
 </ul>
 </section>
-<section id="agenda---3" class="slide level1">
-<h1>Agenda - 3</h1>
-<p>Destructure &amp; Restructure DB</p>
+<section id="intro-3" class="slide level1">
+<h1>Intro: 3</h1>
+<p>Restructure a DB</p>
 <ul>
 <li>Why?</li>
 <li>How?</li>
@@ -79,8 +88,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'Hobs'+'<\/'+'a'+'>');
 </ul></li>
 </ul>
 </section>
-<section id="agenda---4" class="slide level1">
-<h1>Agenda - 4</h1>
+<section id="agenda-4" class="slide level1">
+<h1>Agenda: 4</h1>
 <p>TFIDF to detect similarity between records</p>
 <ul>
 <li>cluster Oregon PACs by their &quot;mission&quot;</li>
@@ -88,18 +97,19 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'Hobs'+'<\/'+'a'+'>');
 <li>compare to DAG of financial transactions</li>
 </ul>
 </section>
-<section id="agenda---5" class="slide level1">
-<h1>Agenda - 5</h1>
+<section id="agenda-5" class="slide level1">
+<h1>Agenda: 5</h1>
 <p>Similarity between similarity matrices</p>
 <p><strong>SAY</strong> TFIDF</p>
 <p>vs.</p>
 <p><strong>DO</strong> Transactions</p>
 </section>
-<section id="why-destructure-a-db-why" class="slide level1">
-<h1>3. Why Destructure a DB: Why?</h1>
+<section id="restructure-db" class="slide level1">
+<h1>3. Restructure DB</h1>
+<h2 id="why">Why?</h2>
 <ul>
-<li>Why squish multiple fields into a string?</li>
-<li>You will vectorize later anyway, right?</li>
+<li>Squish fields into a string?</li>
+<li>Vectorizing later anyway, right?</li>
 </ul>
 <h2 id="because">Because</h2>
 <ul>
@@ -107,8 +117,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'Hobs'+'<\/'+'a'+'>');
 <li>Information &quot;smear&quot; across fields/dimensions</li>
 </ul>
 </section>
-<section id="destructure-a-db-how" class="slide level1">
-<h1>3. Destructure a DB: How?</h1>
+<section id="restructure-db-how" class="slide level1">
+<h1>3. Restructure DB: How?</h1>
 <ol type="1">
 <li>Ignore numbers/dates</li>
 <li>Stringify each field</li>
@@ -119,10 +129,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'Hobs'+'<\/'+'a'+'>');
 <li>Vectorize/Count</li>
 </ol>
 </section>
-<section id="restructure-the-db-tfidf" class="slide level1">
-<h1>3. Restructure the DB: TFIDF</h1>
-<p>Compute sparse TFIDF</p>
+<section id="restructure-db-tfidf" class="slide level1">
+<h1>3. Restructure DB: TFIDF</h1>
+<h2 id="tfidf">TFIDF</h2>
 <ul>
+<li>Must be sparse to fit in memory</li>
 <li>Explicit python builtins: <code>Counter</code>, <code>defaultdict</code></li>
 <li>sklearn</li>
 </ul>
