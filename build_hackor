@@ -12,7 +12,7 @@ cp -f "$BUILD_DIR/../hobson.github.io/images/"* "$BUILD_DIR/images/"
 # cp -f `pwd`/../hobson.github.io/images/*.gif `pwd`/images/
 
 if [ -z "$1" ]; then
-    PRESENTATION=2015-08-22-TFNW-BYO-Brain-Workshop
+    PRESENTATION=2015-10-27-Hacking-Oregon-Hidden-Political-Connections
 else
     PRESENTATION="$1"
 fi
@@ -22,6 +22,7 @@ HTML=`pwd`"/${PRESENTATION}.html"
 pandoc -t revealjs --mathjax --template=`pwd`/pandoc-template-for-revealjs.html -V theme=moon -s "$MARKDOWN" -o "$HTML"
 sed -i -e 's/src\=\"\/images/src="\/talks\/images/g' "$HTML"
 
+git add *.html
 git add images/
 git add notebooks/*.ipynb
 git commit -am "auto-commit new build  $(date)"
