@@ -6,7 +6,8 @@ BUILD_DIR=`pwd`
 
 BLOG="$BUILD_DIR/../hobson.github.io"
 IPYNB="$BUILD_DIR/../hack-university-machine-learning/huml"
-rsync -avzf "$BLOG/images" "$BUILD_DIR/images"
+
+rsync -avz "$BLOG/images" "$BUILD_DIR/images"
 
 # uncomment these to "rsync" images folders
 # rm -rf "$BUILD_DIR/images/"
