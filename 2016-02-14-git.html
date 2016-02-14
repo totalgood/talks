@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>git</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/reveal.css"/>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">git</h1>
+    <h3 class="date"></h3>
+</section>
+
+<section id="git" class="slide level1">
+<h1>Git</h1>
+<h2 id="the-coolest-tool-on-the-planet">The coolest tool on the planet</h2>
+</section>
+<section id="github" class="slide level1">
+<h1>GitHub</h1>
+<ul>
+<li><code>GitHub</code> is not <code>git</code></li>
+<li>One of many web interfaces to a <code>git</code> repo</li>
+<li>It's a corporation, a website</li>
+<li>Efficient, open, generous, socially responsible, sustainable company</li>
+<li><p>For-Profit</p></li>
+<li><p>Most pro-social company on the planet?</p></li>
+</ul>
+</section>
+<section id="github-niceness" class="slide level1">
+<h1>GitHub Niceness</h1>
+<ul>
+<li>Hosts static websites for free</li>
+<li>no database</li>
+<li>no python</li>
+<li>nothing <code>persistent</code></li>
+<li>Renders popular file formats natively</li>
+<li>iPython notebooks</li>
+<li>Markdown</li>
+<li>JPG, PNG</li>
+<li>not PDF?</li>
+<li>Pull Requests!</li>
+</ul>
+</section>
+<section id="pull-requests" class="slide level1">
+<h1>Pull Requests</h1>
+<ul>
+<li><h2 id="a-diff-file-sent-to">a <code>diff</code> file sent to</h2>
+<h1 id="the-story">The Story</h1></li>
+<li>Linus upset with <code>hg</code> (Mercurial) and bitbucket (Atlassian)
+<ul>
+<li>Started inching up his &quot;subscription&quot; plan for Linux</li>
+<li>Wouldn't implement important security features
+<ul>
+<li>friendly with sabatouers from Windows?</li>
+</ul></li>
+</ul></li>
+<li>Linus and LF put their minds together and built <code>git</code> in a week or two</li>
+<li>Built GitHub in a few months</li>
+<li>All Linux development happens on git</li>
+<li>Google just shut down Google Code in favor of GitHub</li>
+<li>Focussed on efficiency for the user
+<ul>
+<li>helpful prompts when something goes wrong</li>
+<li>RTM</li>
+</ul></li>
+</ul>
+</section>
+<section id="integrations" class="slide level1">
+<h1>Integrations</h1>
+<ul>
+<li>Thousands of 3rd party apps integrate with it</li>
+<li>You can deploy a complex application just by pushing to GitHub</li>
+</ul>
+</section>
+<section id="tutorials" class="slide level1">
+<h1>Tutorials</h1>
+<ul>
+<li><a href="http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository">Official <code>git</code> book</a></li>
+<li><a href="http://rogerdudler.github.io/git-guide/">An in-your-face introduction</a> is pretty good.</li>
+<li><a href="https://blog.interlinked.org/tutorials/git.html">A humble, casual tutorial</a></li>
+</ul>
+</section>
+<section id="workflow" class="slide level1">
+<h1>Workflow</h1>
+<p>Developers have a workflow like factory workers.</p>
+<p>Your work must integrate with parts from others.</p>
+<p>Your workflow is how you &quot;play nice&quot; with others.</p>
+<p>You don't need to worry about this.</p>
+<p><a href="http://github.com/hackoregon/hack-university-machine-learning">hack-university</a> is your playground to learn in.</p>
+</section>
+<section id="workflow-1" class="slide level1">
+<h1>Workflow</h1>
+<ul>
+<li>Flexibile tools, means lots of &quot;workflow&quot; options</li>
+<li>how you</li>
+<li><code>branch</code></li>
+<li><code>pull</code></li>
+<li><code>merge</code></li>
+<li><code>push</code></li>
+<li>Deploy</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,         // Display controls in the bottom right corner
+        progress: true,         // Display a presentation progress bar
+        history: true,          // Push each slide change to the browser history
+        center: false,                       // Vertical centering of slides
+        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
+        slideNumber: false,                // Display the page number of the current slide
+        theme: 'moon', // available themes are in /css/theme
+        transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>
