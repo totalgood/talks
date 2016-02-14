@@ -3,10 +3,12 @@
 # FIXME: find all revealjs markdown files and run pandoc on them like this
 
 BUILD_DIR=`pwd`
-
 BLOG="$BUILD_DIR/../hobson.github.io"
 IPYNB="$BUILD_DIR/../hack-university-machine-learning/huml"
+SLIDES_MD="$BUILD_DIR/../hack-university-machine-learning/docs/slides"
+POSTS_MD="$BUILD_DIR/../hobson.github.io/_posts"
 
+cp -f "$SLIDES_MD/*.md" "$POSTS_MD"
 rsync -avz "$BLOG/images" "$BUILD_DIR/images"
 
 # uncomment these to "rsync" images folders
@@ -21,11 +23,12 @@ rsync -avz "$BLOG/images" "$BUILD_DIR/images"
 # cp -f `pwd`/../hobson.github.io/images/*.gif `pwd`/images/
 
 if [ -z "$1" ]; then
+    echo "USAGE: build.sh filename.md"
     PRESENTATION=2015-10-27-Hacking-Oregon-Hidden-Political-Connections
 else
     PRESENTATION="$1"
 fi
-MARKDOWN="$BUILD_DIR/../hobson.github.io/_posts/${PRESENTATION}.md"
+MARKDOWN="$POSTS_MD/${PRESENTATION}.md"
 
 # if [ - "$MARKDOWN" ]
 HTML="$BUILD_DIR/${PRESENTATION}.html"
@@ -33,6 +36,7 @@ HTML="$BUILD_DIR/${PRESENTATION}.html"
 
 pandoc -t revealjs --mathjax --template="$BUILD_DIR/pandoc-template-for-revealjs.html" -V theme=moon -s "$MARKDOWN" -o "$HTML"
 sed -i -e 's/src\=\"\/images/src="\/talks\/images/g' "$HTML"
+echo "[${PRESENTATION}](http://totalgood.github.io/talks/${PRESENTATION}.html)" >> "$SLIDES_MD/../slides.md"
 
 git add *.html
 git add images/
@@ -62,3 +66,5 @@ git add .
 git commit -am 'update ipython notebooks and data to reflect talk slides'
 git push
 cd "$BUILD_DIR"
+
+
