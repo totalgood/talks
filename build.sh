@@ -8,7 +8,7 @@ IPYNB="$BUILD_DIR/../hack-university-machine-learning/huml"
 SLIDES_MD="$BUILD_DIR/../hack-university-machine-learning/docs/slides"
 POSTS_MD="$BUILD_DIR/../hobson.github.io/_posts"
 
-cp -f "$SLIDES_MD/*.md" "$POSTS_MD"
+cp -f "$SLIDES_MD/"*.md "$POSTS_MD"
 rsync -avz "$BLOG/images" "$BUILD_DIR/images"
 
 # uncomment these to "rsync" images folders
