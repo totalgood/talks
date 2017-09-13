@@ -1,6 +1,6 @@
 # Total Good Talks
 
-Here's the source code and slides for some of the talks by [Total Good](http://totalgood.com)
+Slides and videos for some talks by [Total Good](http://totalgood.com)
 
 ## Talks
    
@@ -10,8 +10,11 @@ Here's the source code and slides for some of the talks by [Total Good](http://t
     <small>PDX Python and Pyladies PDX, April 2017</small>
   </li>
   <li>
-    Making an Impact with Natural Language Processing<small><a href="https://github.com/totalgood/twip/tree/master/docs/notebooks"></a>, <a href="https://youtu.be/jSdkFSg9oW8">video</a></small><br>
+    Making an Impact with Natural Language Processing<small><a href="https://youtu.be/jSdkFSg9oW8">video</a>, <a href="https://github.com/totalgood/twip/tree/master/docs/notebooks">code</a></small><br>
     <small>PyCon, April 2016</small>
+  </li>
+  <li>
+    There's Hope for Chatbots<small><a href="https://totalgood.github.io/hope/#/">slides</a>, <a href="http://pyvideo.org/pydx-2016/theres-hope-for-chatbots.html">video</a>, <a href="http://github.com/totalgood/hope">code</a></small>
   </li>
   <li>
     Machine Learning Intro (DRAFT)<small><a href="http://totalgood.github.io/talks/2016-02-11-Hack-University-Machine-Learning-01-Introduction.html">slides</a></small><br>
