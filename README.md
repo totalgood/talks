@@ -32,6 +32,7 @@ Here's the source code and slides for some of the talks by [Total Good](http://t
   <li>
     <a href="http://bit.ly/explorehyperspace">Explore Hyperspace</a><br>
     <small>PDX Python & PyLadies, April 2015</small>
+  </li>
 </ul>
 
 
