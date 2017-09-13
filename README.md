@@ -6,7 +6,7 @@ Slides and videos for some talks by [Total Good](http://totalgood.com)
    
 <ul>
   <li>
-    Explore Hyperspace: <small><a href="http://bit.ly/explorehyperspace">slides</a><br></small>
+    Explore Hyperspace: <small><a href="http://bit.ly/explorehyperspace">slides</a></small><br>
     <small>PDX Python and Pyladies PDX, April 2017</small>
   </li>
   <li>
@@ -14,7 +14,8 @@ Slides and videos for some talks by [Total Good](http://totalgood.com)
     <small>PyCon, April 2016</small>
   </li>
   <li>
-    There's Hope for Chatbots: <small><a href="https://totalgood.github.io/hope/#/">slides</a>, <a href="http://pyvideo.org/pydx-2016/theres-hope-for-chatbots.html">video</a>, <a href="http://github.com/totalgood/hope">code</a></small>
+    There's Hope for Chatbots: <small><a href="https://totalgood.github.io/hope/#/">slides</a>, <a href="http://pyvideo.org/pydx-2016/theres-hope-for-chatbots.html">video</a>, <a href="http://github.com/totalgood/hope">code</a></small><br>
+    <small>PyDX, December 2016</small>
   </li>
   <li>
     Machine Learning Intro (DRAFT): <small><a href="http://totalgood.github.io/talks/2016-02-11-Hack-University-Machine-Learning-01-Introduction.html">slides</a></small><br>
