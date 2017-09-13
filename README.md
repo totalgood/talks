@@ -6,7 +6,15 @@ Here's the source code and slides for some of the talks by [Total Good](http://t
    
 <ul>
   <li>
-    <a href="http://totalgood.github.io/talks/2016-02-11-Hack-University-Machine-Learning-01-Introduction.html">Machine Learning Intro (DRAFT)</a><br>
+    <a href="http://bit.ly/explorehyperspace">Explore Hyperspace</a><br>
+    <small>PDX Python and Pyladies PDX, April 2017</small>
+  </li>
+  <li>
+    Making an Impact with Natural Language Processing<small><a href="https://github.com/totalgood/twip/tree/master/docs/notebooks"></a>, <a href="https://youtu.be/jSdkFSg9oW8">video</a></small><br>
+    <small>PyCon, April 2016</small>
+  </li>
+  <li>
+    Machine Learning Intro (DRAFT)<small><a href="http://totalgood.github.io/talks/2016-02-11-Hack-University-Machine-Learning-01-Introduction.html">slides</a></small><br>
     <small>Hack University, Feb 11, 2016</small>
   </li>
   <li>
@@ -22,17 +30,14 @@ Here's the source code and slides for some of the talks by [Total Good](http://t
     <small>PDX Data Science, May 2015</small>
   </li>
   <li>
-    <a href="http://bit.ly/pybrain">Predict Weather with PyBrain</a><br>
+    Predict Weather with PyBrain<small><a href="http://bit.ly/pybrain">slides</a>, <a href="https://youtu.be/9LOGjet1lFk">video</a></small><br>
     <small>PyCon, June 2015</small>
   </li>
   <li>
-    <a href="http://bit.ly/datawarstories">Predictive Analytics War Stories</a><br>
+    Predictive Analytics War Stories<small><a href="http://bit.ly/datawarstories">slides</a>, <a href="https://youtu.be/8n338W0yvoM">video</a></small><br>
     <small>Predictive Analytics Summit, April 2015</small>
   </li>
-  <li>
-    <a href="http://bit.ly/explorehyperspace">Explore Hyperspace</a><br>
-    <small>PDX Python & PyLadies, April 2015</small>
-  </li>
+
 </ul>
 
 
